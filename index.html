@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BookList</title>
+    <style>
+        body{
+            background: rgba(128, 128, 128, 0.603);
+        }
+        .container{
+            width: 70vw;
+            margin: 10px auto;
+        }
+        h1{
+            font-size: 2.8rem;
+        }
+        .input-grp{
+            width: 100%;
+            padding: 10px 5px;
+            border-radius: 15px;
+        }
+        label{
+            font-size: 20px;
+        }
+        #form-group{
+            margin: 20px 0;
+        }
+        input[type="submit"]{
+            margin: 20px 0;
+            padding: 11px 20px;
+            border-radius: 6px;
+        }
+        table{
+            width: 100%;
+            text-align: center;
+        }
+        .success, .error{
+            padding: 10px 0;
+            width: 100%;
+            color: white;
+        }
+        .success{
+            background: green;
+        }
+        .error{
+            background: red;
+        }
+    </style>
+</head>
+<body>
+    <main class="container">
+        <div><h1>Add Book</h1></div>
+        <form action="" id="form-group">
+            <div>
+                <label for="title">Book Title</label>
+                <input type="text" class="input-grp" id="title">
+            </div>
+            <div>
+                <label for="author">Author</label>
+                <input type="text" class="input-grp" id="author">
+            </div>
+            <div>
+                <label for="isbn">ISBN</label>
+                <input type="text" class="input-grp" id="isbn">
+            </div>
+            <div><input type="submit" value="Submit"></div>
+        </form>
+        <table>
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th>ISBN</th>
+                    <th> </th>
+                </tr>
+            </thead>    
+            <tbody id="book-list"></tbody>
+        </table>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
